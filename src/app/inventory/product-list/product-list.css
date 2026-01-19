@@ -1,0 +1,81 @@
+/* product-catalog.component.css */
+
+/* Page title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Add Product button */
+button.btn-primary {
+  margin-bottom: 15px;
+}
+
+/* Table styling */
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table.table th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+table.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Button spacing */
+td button {
+  margin-right: 5px;
+}
+
+/* Hover effect for rows */
+table.table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  table.table, 
+  table.table thead, 
+  table.table tbody, 
+  table.table th, 
+  table.table td, 
+  table.table tr {
+    display: block;
+  }
+
+  table.table thead tr {
+    display: none;
+  }
+
+  table.table tbody tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  table.table tbody td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  table.table tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    text-align: left;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,51 @@
+<h3>Stock Transaction</h3>
+
+<div class="transaction-container">
+
+  <!-- LEFT : STOCK IN FORM -->
+  <form (ngSubmit)="saveStockIn()" class="form-box">
+    <h4>Stock In</h4>
+
+    <label>Product ID</label>
+    <input type="number" [(ngModel)]="stockIn.productId" name="inProductId" required />
+
+    <label>Quantity</label>
+    <input type="number" [(ngModel)]="stockIn.quantity" name="inQuantity" required />
+
+    <label>Vendor</label>
+    <input [(ngModel)]="stockIn.vendor" name="vendor" required />
+
+    <label>Handler</label>
+    <input [(ngModel)]="stockIn.handler" name="inHandler" required />
+
+    <label>Notes</label>
+    <textarea [(ngModel)]="stockIn.notes" name="inNotes"></textarea>
+
+    <button type="submit">Save Stock In</button>
+  </form>
+
+  <!-- RIGHT : STOCK OUT FORM -->
+  <form (ngSubmit)="saveStockOut()" class="form-box">
+    <h4>Stock Out</h4>
+
+    <label>Product ID</label>
+    <input type="number" [(ngModel)]="stockOut.productId" name="outProductId" required />
+
+    <label>Quantity</label>
+    <input type="number" [(ngModel)]="stockOut.quantity" name="outQuantity" required />
+
+    <label>Customer / Order Ref</label>
+    <input [(ngModel)]="stockOut.customerRef" name="customerRef" required />
+
+    <label>Handler</label>
+    <input [(ngModel)]="stockOut.handler" name="outHandler" required />
+
+    <label>Notes</label>
+    <textarea [(ngModel)]="stockOut.notes" name="outNotes"></textarea>
+
+    <button type="submit" class="out-btn">Save Stock Out</button>
+  </form>
+
+</div>
+
+<p>{{ message }}</p>

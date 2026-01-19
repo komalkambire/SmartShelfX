@@ -1,0 +1,105 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #2e7d32;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu li:hover,
+.menu .active {
+  background: #1b5e20;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 10px;
+  background: #c62828;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 25px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Chart Box */
+.chart-box {
+  background: white;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.chart-box h4 {
+  margin-bottom: 15px;
+}

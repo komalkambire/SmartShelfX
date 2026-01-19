@@ -1,0 +1,35 @@
+<h2>{{ isEdit ? "Edit Product" : "Add Product" }}</h2>
+
+<form (ngSubmit)="save()">
+  <div class="mb-2">
+    <label>Name</label>
+    <input [(ngModel)]="product.name" name="name" class="form-control" required>
+  </div>
+
+  <div class="mb-2">
+    <label>SKU</label>
+    <input [(ngModel)]="product.sku" name="sku" class="form-control" required>
+  </div>
+
+  <div class="mb-2">
+    <label>Category</label>
+    <input [(ngModel)]="product.category" name="category" class="form-control" required>
+  </div>
+
+  <div class="mb-2">
+    <label>Description</label>
+    <textarea [(ngModel)]="product.description" name="description" class="form-control"></textarea>
+  </div>
+
+  <div class="mb-2">
+    <label>Price</label>
+    <input type="number" [(ngModel)]="product.price" name="price" class="form-control">
+  </div>
+
+  <div class="mb-2">
+    <label>Vendor ID</label>
+    <input type="number" [(ngModel)]="product.vendorId" name="vendorId" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success mt-3">Save</button>
+</form>

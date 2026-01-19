@@ -1,0 +1,30 @@
+<h2>Product Catalog</h2>
+
+<button routerLink="/inventory/add" class="btn btn-primary mb-3">Add Product</button>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>SKU</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Vendor</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of products">
+      <td>{{ p.sku }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.category }}</td>
+      <td>{{ p.price }}</td>
+      <td>{{ p.vendorId }}</td>
+      <td>
+        <button [routerLink]="['/inventory/edit', p.id]" class="btn btn-sm btn-warning me-1">Edit</button>
+       <button class="btn btn-sm btn-danger" (click)="delete(p.id!)">Delete</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>

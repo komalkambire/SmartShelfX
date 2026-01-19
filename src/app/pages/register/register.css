@@ -1,0 +1,93 @@
+/* Full page center */
+.page-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f7fa;
+  padding: 0;
+  margin: 0;
+}
+
+/* Register card box */
+.register-card {
+  background: #ffffff;
+  padding: 35px;
+  width: 420px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Heading */
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Labels */
+.register-card label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Inputs & Dropdown */
+.register-card input,
+.register-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 18px;
+  transition: 0.2s;
+}
+
+/* Focus highlight */
+.register-card input:focus,
+.register-card select:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.35);
+}
+
+/* Register button */
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/* Button hover */
+.btn-register:hover {
+  background-color: #43a047;
+}
+
+/* Login link */
+.register-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

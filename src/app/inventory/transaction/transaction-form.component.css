@@ -1,0 +1,75 @@
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container */
+.transaction-container {
+  display: flex;
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Form cards */
+.form-box {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Titles */
+.form-box h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  min-height: 70px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.out-btn {
+  background: #dc3545;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Message */
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+}
